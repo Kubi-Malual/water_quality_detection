@@ -146,8 +146,13 @@ class _SensorDashboardState extends State<SensorDashboard> {
         padding: const EdgeInsets.all(10.0),
         children: [
           CustomListItemTwo(
-            thumbnail: Container(
-              decoration: const BoxDecoration(color: Colors.pink),
+            thumbnail: GestureDetector(
+              onTap: (){
+                print("Container 1 clicked");
+              },
+              child: Container(
+                decoration: const BoxDecoration(color: Colors.pink),
+              ),
             ),
             title: 'Flutter 1.0 Launch',
             subtitle: 'Flutter continues to improve and expand its horizons. '
@@ -157,13 +162,40 @@ class _SensorDashboardState extends State<SensorDashboard> {
             readDuration: '5 mins',
           ),
           CustomListItemTwo(
-            thumbnail: Container(
-              decoration: const BoxDecoration(
-                // color: Colors.blue,
-                image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/clock.png'),
-                  fit: BoxFit.fill,
+            thumbnail: GestureDetector(
+              onTap: (){
+                print("Container 2 clicked");
+              },
+              child: Container(
+                decoration: const BoxDecoration(
+                  // color: Colors.blue,
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/images/clock.png'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+            ),
+            title: 'Flutter Malual Release - Continual updates to the framework',
+            subtitle: 'Flutter once again improves and makes updates.',
+            author: 'Flutter',
+            publishDate: 'Feb 26',
+            readDuration: '12 mins',
+          ),
+          CustomListItemTwo(
+            thumbnail: GestureDetector(
+              onTap: (){
+                print("Container Ph clicked");
+              },
+              child: Container(
+                decoration: const BoxDecoration(
+                  // color: Colors.blue,
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/images/clock.png'),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
@@ -174,13 +206,18 @@ class _SensorDashboardState extends State<SensorDashboard> {
             readDuration: '12 mins',
           ),
           CustomListItemTwo(
-            thumbnail: Container(
-              decoration: const BoxDecoration(
-                // color: Colors.blue,
-                image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/clock.png'),
-                  fit: BoxFit.fill,
+            thumbnail: GestureDetector(
+              onTap: (){
+                print("Container 3rd last clicked");
+              },
+              child: Container(
+                decoration: const BoxDecoration(
+                  // color: Colors.blue,
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/images/clock.png'),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
@@ -191,30 +228,18 @@ class _SensorDashboardState extends State<SensorDashboard> {
             readDuration: '12 mins',
           ),
           CustomListItemTwo(
-            thumbnail: Container(
-              decoration: const BoxDecoration(
-                // color: Colors.blue,
-                image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/clock.png'),
-                  fit: BoxFit.fill,
-                ),
-              ),
-            ),
-            title: 'Flutter 1.2 Release - Continual updates to the framework',
-            subtitle: 'Flutter once again improves and makes updates.',
-            author: 'Flutter',
-            publishDate: 'Feb 26',
-            readDuration: '12 mins',
-          ),
-          CustomListItemTwo(
-            thumbnail: Container(
-              decoration: const BoxDecoration(
-                // color: Colors.blue,
-                image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/clock.png'),
-                  fit: BoxFit.fill,
+            thumbnail: GestureDetector(
+              onTap: (){
+                print("Container 5 clicked");
+              },
+              child: Container(
+                decoration: const BoxDecoration(
+                  // color: Colors.blue,
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/images/clock.png'),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
