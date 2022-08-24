@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
 class SensorDashboard extends StatefulWidget {
   const SensorDashboard({Key? key}) : super(key: key);
 
   @override
   State<SensorDashboard> createState() => _SensorDashboardState();
 }
+
 class CustomListItemTwo extends StatelessWidget {
   const CustomListItemTwo({
     Key? key,
@@ -54,6 +56,7 @@ class CustomListItemTwo extends StatelessWidget {
     );
   }
 }
+
 class _ArticleDescription extends StatelessWidget {
   const _ArticleDescription({
     Key? key,
@@ -126,6 +129,7 @@ class _ArticleDescription extends StatelessWidget {
     );
   }
 }
+
 class _SensorDashboardState extends State<SensorDashboard> {
   @override
   Widget build(BuildContext context) {
@@ -147,7 +151,7 @@ class _SensorDashboardState extends State<SensorDashboard> {
         children: [
           CustomListItemTwo(
             thumbnail: GestureDetector(
-              onTap: (){
+              onTap: () {
                 print("Container 1 clicked");
               },
               child: Container(
@@ -163,21 +167,21 @@ class _SensorDashboardState extends State<SensorDashboard> {
           ),
           CustomListItemTwo(
             thumbnail: GestureDetector(
-              onTap: (){
+              onTap: () {
                 print("Container 2 clicked");
               },
               child: Container(
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage(
-                        'assets/images/clock.png'),
+                    image: AssetImage('assets/images/clock.png'),
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
             ),
-            title: 'Flutter Malual Release - Continual updates to the framework',
+            title:
+                'Flutter Malual Release - Continual updates to the framework',
             subtitle: 'Flutter once again improves and makes updates.',
             author: 'Flutter',
             publishDate: 'Feb 26',
@@ -185,15 +189,14 @@ class _SensorDashboardState extends State<SensorDashboard> {
           ),
           CustomListItemTwo(
             thumbnail: GestureDetector(
-              onTap: (){
+              onTap: () {
                 print("Container Ph clicked");
               },
               child: Container(
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage(
-                        'assets/images/clock.png'),
+                    image: AssetImage('assets/images/clock.png'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -207,15 +210,14 @@ class _SensorDashboardState extends State<SensorDashboard> {
           ),
           CustomListItemTwo(
             thumbnail: GestureDetector(
-              onTap: (){
+              onTap: () {
                 print("Container 3rd last clicked");
               },
               child: Container(
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage(
-                        'assets/images/clock.png'),
+                    image: AssetImage('assets/images/clock.png'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -229,15 +231,14 @@ class _SensorDashboardState extends State<SensorDashboard> {
           ),
           CustomListItemTwo(
             thumbnail: GestureDetector(
-              onTap: (){
+              onTap: () {
                 print("Container 5 clicked");
               },
               child: Container(
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage(
-                        'assets/images/clock.png'),
+                    image: AssetImage('assets/images/clock.png'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -252,6 +253,5 @@ class _SensorDashboardState extends State<SensorDashboard> {
         ],
       ),
     );
-
   }
 }
