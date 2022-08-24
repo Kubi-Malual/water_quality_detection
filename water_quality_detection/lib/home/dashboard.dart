@@ -155,7 +155,13 @@ class _SensorDashboardState extends State<SensorDashboard> {
                 print("Container 1 clicked");
               },
               child: Container(
-                decoration: const BoxDecoration(color: Colors.pink),
+                decoration: const BoxDecoration(
+                  // color: Colors.blue,
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/male.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
               ),
             ),
             title: 'Flutter 1.0 Launch',
@@ -174,7 +180,7 @@ class _SensorDashboardState extends State<SensorDashboard> {
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage('assets/images/clock.png'),
+                    image: AssetImage('assets/images/pump.jpg'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -196,7 +202,7 @@ class _SensorDashboardState extends State<SensorDashboard> {
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage('assets/images/clock.png'),
+                    image: AssetImage('assets/images/ph.jpg'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -217,7 +223,7 @@ class _SensorDashboardState extends State<SensorDashboard> {
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage('assets/images/clock.png'),
+                    image: AssetImage('assets/images/esp8266.jpg'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -238,7 +244,7 @@ class _SensorDashboardState extends State<SensorDashboard> {
                 decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
-                    image: AssetImage('assets/images/clock.png'),
+                    image: AssetImage('assets/images/female.jpg'),
                     fit: BoxFit.fill,
                   ),
                 ),
