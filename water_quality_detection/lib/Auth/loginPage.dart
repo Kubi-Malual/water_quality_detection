@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
               children: <Widget>[
                 Container(
                   height: 400,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage('assets/images/background.png'),
                           fit: BoxFit.fill)),
@@ -31,7 +31,7 @@ class LoginPage extends StatelessWidget {
                         child: FadeAnimation(
                             1,
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
                                           'assets/images/light-1.png'))),
@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
                         child: FadeAnimation(
                             1.3,
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
                                           'assets/images/light-2.png'))),
@@ -58,7 +58,7 @@ class LoginPage extends StatelessWidget {
                         child: FadeAnimation(
                             1.5,
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
                                           'assets/images/clock.png'))),
@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
                             1.6,
                             Container(
                               margin: EdgeInsets.only(top: 50),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "Login",
                                   style: TextStyle(
@@ -84,7 +84,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(30.0),
+                  padding: const EdgeInsets.all(30.0),
                   child: Column(
                     children: <Widget>[
                       FadeAnimation(
@@ -94,7 +94,7 @@ class LoginPage extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(10),
-                                boxShadow: [
+                                boxShadow: const [
                                   BoxShadow(
                                       color: Color.fromRGBO(143, 148, 251, .2),
                                       blurRadius: 20.0,
@@ -103,9 +103,9 @@ class LoginPage extends StatelessWidget {
                             child: Column(
                               children: <Widget>[
                                 Container(
-                                  padding: EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0),
                                   decoration: BoxDecoration(
-                                      border: Border(
+                                      border: const Border(
                                         bottom: BorderSide(color: Colors.grey),
                                       ),
                                       color: Colors.grey[100]),
@@ -118,7 +118,7 @@ class LoginPage extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  padding: EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0),
                                   child: TextField(
                                     decoration: InputDecoration(
                                         border: InputBorder.none,
@@ -130,7 +130,7 @@ class LoginPage extends StatelessWidget {
                               ],
                             ),
                           )),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       FadeAnimation(
@@ -150,12 +150,12 @@ class LoginPage extends StatelessWidget {
                               height: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
-                                gradient: LinearGradient(colors: [
+                                gradient: const LinearGradient(colors: [
                                   Color.fromRGBO(143, 148, 251, 1),
                                   Color.fromRGBO(143, 148, 251, .6),
                                 ]),
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "Login",
                                   style: TextStyle(
@@ -165,12 +165,12 @@ class LoginPage extends StatelessWidget {
                               ),
                             ),
                           )),
-                      SizedBox(
+                      const SizedBox(
                         height: 70,
                       ),
                       FadeAnimation(
                           1.5,
-                          Text(
+                          const Text(
                             "Forgot Password?",
                             style: TextStyle(
                                 color: Color.fromRGBO(143, 148, 251, 1)),

@@ -28,6 +28,7 @@ class CustomListItemTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
+
       padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: SizedBox(
         height: 100,
@@ -134,8 +135,20 @@ class _SensorDashboardState extends State<SensorDashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     // backgroundColor: Colors.deepPurpleAccent,
       appBar: AppBar(
         title: const Text('Water Detection'),
+        actions: <Widget>[
+          Padding(
+              padding: const EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {},
+                child: const Icon(
+                    Icons.more_vert
+                ),
+              )
+          ),
+        ],
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
@@ -144,7 +157,7 @@ class _SensorDashboardState extends State<SensorDashboard> {
             ]),
           ),
         ),
-        backgroundColor: Colors.deepPurpleAccent,
+
       ),
       body: ListView(
         padding: const EdgeInsets.all(10.0),
