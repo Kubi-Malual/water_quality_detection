@@ -7,6 +7,8 @@ import 'package:water_quality_detection/Animation/FadeAnimation.dart';
 import 'package:water_quality_detection/home/ph_readings.dart';
 
 class MyHomePage extends StatefulWidget {
+  static String id ='MyhomePage';
+
   const MyHomePage({Key? key}) : super(key: key);
 
   @override

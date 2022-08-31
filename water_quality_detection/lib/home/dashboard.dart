@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SensorDashboard extends StatefulWidget {
+  static String id ='SensorDashboard';
   const SensorDashboard({Key? key}) : super(key: key);
 
   @override

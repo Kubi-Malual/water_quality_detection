@@ -5,6 +5,7 @@ import 'package:water_quality_detection/home/home.dart';
 import '../home/dashboard.dart';
 
 class LoginPage extends StatelessWidget {
+  static String id = 'LoginPage';
   const LoginPage({Key? key}) : super(key: key);
 
   @override

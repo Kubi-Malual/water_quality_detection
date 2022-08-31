@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:water_quality_detection/Animation/FadeAnimation.dart';
 
 class PhReading extends StatefulWidget {
+  static String id ='PhReading';
   const PhReading({Key? key}) : super(key: key);
 
   @override
@@ -31,7 +32,7 @@ class _PhReadingState extends State<PhReading> {
       appBar: AppBar(
         title: const Text('Water Detection'),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
               Color.fromRGBO(143, 148, 251, 1),
               Color.fromRGBO(143, 148, 251, .6),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:water_quality_detection/Auth/loginPage.dart';
+import 'package:water_quality_detection/home/dashboard.dart';
+import 'package:water_quality_detection/home/ph_readings.dart';
 
 import 'home/home.dart';
 
@@ -18,7 +20,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           // primarySwatch: Colors.deepPurpleAccent,
           ),
-      home: const LoginPage(),
+      initialRoute: MyHomePage.id,
+      routes: {
+        LoginPage.id:(contex)=>const LoginPage(),
+        MyHomePage.id:(context)=>const MyHomePage(),
+        PhReading.id:(context)=>const PhReading(),
+        SensorDashboard.id:(context)=> const SensorDashboard(),
+
+    },
+      //home: const LoginPage(),
     );
   }
 }
